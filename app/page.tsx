@@ -50,7 +50,7 @@ export default function Home() {
       {/* Quick nav cards */}
       <section className="flex flex-col gap-6">
         <h2 className="section-heading">Explore</h2>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <Link href="/projects" className="card group flex flex-col gap-2 hover:border-indigo-300">
             <span className="text-2xl">🛠</span>
             <h3 className="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors">
@@ -58,6 +58,15 @@ export default function Home() {
             </h3>
             <p className="text-sm text-slate-500">
               Things I&apos;ve built — tools, apps, and experiments.
+            </p>
+          </Link>
+          <Link href="/experience" className="card group flex flex-col gap-2 hover:border-indigo-300">
+            <span className="text-2xl">💼</span>
+            <h3 className="font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors">
+              Experience
+            </h3>
+            <p className="text-sm text-slate-500">
+              Roles, internships, and research I&apos;ve been part of.
             </p>
           </Link>
           <Link href="/interests" className="card group flex flex-col gap-2 hover:border-indigo-300">
