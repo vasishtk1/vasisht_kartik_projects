@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative text-sm font-medium text-slate-600 transition-colors duration-200 hover:text-indigo-600;
+  }
+
+  .nav-link.active {
+    @apply text-indigo-600;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 h-0.5 w-0 bg-indigo-600 transition-all duration-200;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .section-heading {
+    @apply text-3xl font-bold text-slate-900 tracking-tight;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200 p-6;
+  }
+
+  .tag {
+    @apply inline-block rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition-colors duration-200 hover:bg-indigo-700;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition-colors duration-200 hover:border-indigo-600 hover:text-indigo-600;
+  }
+
+  .placeholder-block {
+    @apply rounded-lg bg-slate-100 animate-pulse;
+  }
+}
