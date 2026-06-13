@@ -12,21 +12,21 @@ const projects = [
   },
   {
     id: 2,
+    name: "Mastermind",
+    accolades: "Clinical Voice Intelligence Platform · San Francisco, California · March 2026 – Present",
+    description:
+      "Mastermind is a clinical voice intelligence platform that combines a real-time web dashboard for patient monitoring and neuroscience triage with an on-device LLM voice agent, powered by Gemma 4, Convex, and Gemini API fallback.",
+    tools: ["TypeScript", "Convex", "Swift", "Xcode", "Gemma 4", "Cactus", "Gemini API"],
+    link: "https://github.com/vasishtk1/mastermind_v1",
+  },
+  {
+    id: 3,
     name: "Deep Learning Research",
     accolades: "2024 IEEE MIT Undergraduate Research Technology Conference · Oct 2024 ",
     description:
       "A computer vision system that uses deep learning and novel curve-fitting algorithms to analyze basketball shot videos and provide real-time trajectory feedback for self-training.",
     tools: ["OpenCV", "Pydantic", "Tensorflow"],
     link: "https://ieeexplore.ieee.org/document/10937574",
-  },
-  {
-    id: 3,
-    name: "QuickAlert",
-    accolades: "🏆 Award / Recognition — Event Name, Year",
-    description:
-      "A short description of what this project does, the problem it solves, and what makes it interesting.",
-    tools: ["Swift", "HTML/CSS", "Tool 3"],
-    link: "https://github.com/vasishtk1/QuickAlertAppPublic",
   },
 ];
 
